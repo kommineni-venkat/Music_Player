@@ -7,14 +7,14 @@ h1, h4 {
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    padding: 0 2rem; /* Added padding for better spacing */
-    margin-bottom: 20px; /* Changed margin to margin-bottom */
+    padding: 0 2rem; 
+    margin-bottom: 20px; 
     
     button { 
       background: transparent; 
       border: 2px solid rgb(212, 228, 210); 
-      border-radius: 5px; /* Added border radius for button */
-      padding: 0.8rem 1.5rem; /* Adjusted padding for button */
+      border-radius: 5px; 
+      padding: 0.8rem 1.5rem;
       font-size: 16px; 
       cursor: pointer; 
       transition: all 0.3s ease; 
@@ -28,12 +28,12 @@ h1, h4 {
   
   @media screen and (max-width: 768px) { 
     nav { 
-      flex-direction: column; /* Changed flex direction for smaller screens */
-      justify-content: center; /* Centered items vertically */
-      padding: 1rem; /* Adjusted padding for smaller screens */
+      flex-direction: column; 
+      justify-content: center; 
+      padding: 1rem; 
   
       button { 
-        margin: 10px 0; /* Added margin for better spacing */
+        margin: 10px 0;
       } 
     } 
   } 

@@ -1,5 +1,3 @@
-// FileName: PlayerSong.js 
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
 import { 
 	faPlay, 
@@ -20,7 +18,7 @@ const Player = ({
 	id, 
 	setSongs, 
 }) => { 
-	//useEffect 
+	
 	const activeLibraryHandler = (nextPrev) => { 
 		const newSongs = songs.map((song) => { 
 			if (song.id === nextPrev.id) { 
@@ -38,7 +36,7 @@ const Player = ({
 		setSongs(newSongs); 
 		console.log("Hey from useEffect form player JS"); 
 	}; 
-	//Event Handlers 
+	
 	const dragHandler = (e) => { 
 		audioRef.current.currentTime = e.target.value; 
 		setSongInfo({ ...songInfo, currentTime: e.target.value }); 
@@ -66,7 +64,7 @@ const Player = ({
 		if (direction === "skip-back") { 
 			if ((currentIndex - 1) % songs.length === -1) { 
 				await setCurrentSong(songs[songs.length - 1]); 
-				// playAudio(isPlaying, audioRef); 
+				 
 				activeLibraryHandler(songs[songs.length - 1]); 
 
 				return; 
@@ -76,7 +74,7 @@ const Player = ({
 		} 
 		if (isPlaying) audioRef.current.play(); 
 	}; 
-	//adding the styles 
+	
 	const trackAnim = { 
 		transform: `translateX(${songInfo.animationPercentage}%)`, 
 	}; 
