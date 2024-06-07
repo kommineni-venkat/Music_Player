@@ -7,19 +7,19 @@
   
     img { 
       width: 20%; 
-      border-radius: 50%; /* Added border-radius for circular image */
-      margin-bottom: 2rem; /* Added margin-bottom for spacing */
+      border-radius: 50%; 
+      margin-bottom: 2rem; 
     } 
   
     h2 { 
       padding: 1rem; 
-      font-size: 2rem; /* Increased font size for song title */
-      color: #333; /* Changed text color for better readability */
+      font-size: 2rem; 
+      color: #333; 
     } 
   
     h3 { 
       font-size: 1rem; 
-      color: #666; /* Changed text color for better readability */
+      color: #666; 
     } 
   } 
   
@@ -41,5 +41,5 @@
   } 
   
   .rotateSong { 
-    animation: rotate 20s linear infinite; /* Removed "forwards" for continuous rotation */
+    animation: rotate 20s linear infinite; 
   } 

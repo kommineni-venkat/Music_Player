@@ -155,15 +155,6 @@ function chillHop() {
       id: uuidv4(), 
       active: false, 
     }, 
-    { 
-      name: "Mystic Echo", 
-      cover: "https://naasongs.com.co/wp-content/uploads/2024/01/Devara-2024.jpg", 
-      artist: " Harmony Harp", 
-      audio: "https://media.geeksforgeeks.org/wp-content/uploads/20231004185212/Jawan-Prevue-Theme.mp3", 
-      color: ["#CD607D", "#c94043"], 
-      id: uuidv4(), 
-      active: false, 
-    }, 
     
   ]; 
 } 
