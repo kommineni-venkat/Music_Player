@@ -1,0 +1,39 @@
+h1, h4 { 
+    color: rgb(106, 138, 106); 
+  } 
+  
+  nav { 
+    min-height: 10vh; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 2rem; /* Added padding for better spacing */
+    margin-bottom: 20px; /* Changed margin to margin-bottom */
+    
+    button { 
+      background: transparent; 
+      border: 2px solid rgb(212, 228, 210); 
+      border-radius: 5px; /* Added border radius for button */
+      padding: 0.8rem 1.5rem; /* Adjusted padding for button */
+      font-size: 16px; 
+      cursor: pointer; 
+      transition: all 0.3s ease; 
+  
+      &:hover { 
+        background: rgb(89, 219, 77); 
+        color: white; 
+      } 
+    } 
+  } 
+  
+  @media screen and (max-width: 768px) { 
+    nav { 
+      flex-direction: column; /* Changed flex direction for smaller screens */
+      justify-content: center; /* Centered items vertically */
+      padding: 1rem; /* Adjusted padding for smaller screens */
+  
+      button { 
+        margin: 10px 0; /* Added margin for better spacing */
+      } 
+    } 
+  } 

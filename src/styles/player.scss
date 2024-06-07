@@ -1,0 +1,76 @@
+.player { 
+    min-height: 20vh; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 2rem; /* Added padding for better spacing */
+  } 
+  
+  .time-control { 
+    width: 50%; 
+    display: flex; 
+    align-items: center; 
+  
+    input[type="range"] { 
+      width: 100%; 
+      background-color: transparent; 
+      cursor: pointer; 
+      -webkit-appearance: none; /* Removes default styling for webkit browsers */
+      appearance: none; /* Removes default styling for other browsers */
+      margin: 0 1rem; /* Added margin for better spacing */
+    } 
+  
+    p { 
+      padding: 1rem; 
+      font-weight: 700; 
+      color: #333; /* Changed text color for better readability */
+    } 
+  } 
+  
+  .play-control { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 1rem; 
+    width: 50%; /* Adjusted width for better layout */
+    
+    svg { 
+      cursor: pointer; 
+      font-size: 1.5rem; /* Increased font size for play/pause icons */
+      color: #333; /* Changed icon color for better visibility */
+    } 
+  } 
+  
+  input[type="range"]:focus { 
+    outline: none; 
+  } 
+  
+  .track { 
+    background: #ddd; /* Changed track background color */
+    width: 100%; 
+    height: 1rem; 
+    position: relative; 
+    border-radius: 1rem; 
+    overflow: hidden; 
+  } 
+  
+  .animate-track { 
+    background: #777; /* Changed animated track background color */
+    width: 100%; 
+    height: 100%; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    transform: translateX(0%); 
+    pointer-events: none; 
+  } 
+  
+  @media screen and (max-width: 768px) { 
+    .time-control { 
+      width: 90%; 
+    } 
+    .play-control { 
+      width: 90%; /* Adjusted width for smaller screens */
+    } 
+  } 
